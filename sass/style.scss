@@ -1,0 +1,137 @@
+@import 'fonts';
+@import 'vars';
+@import 'media-queries';
+$fondo:#353f46;
+$title: #fff;
+$margen:2rem;
+body{
+    background: $fondo;
+
+    @include respond-to($phone){
+    
+    }
+    @include respond-to($tablet-portrait){
+        background: rgb(113, 240, 240);  
+      }
+}
+.col-sm-2{
+    background: $fondo;
+    color: rgb(255, 249, 249);
+}
+.cont{
+    padding-left: 0%;
+    padding-right: 0%;
+
+}
+.heat{
+    width: 100%;
+    height: 80%;
+}
+.blue{
+    margin-right: 8rem;
+    margin-left: 3rem;
+}
+.e{
+    left: -11.6rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    margin-top: -3px; ;
+}
+
+.row{
+margin-left: 0em;
+margin-right: 0em;
+}
+.centertitle{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.bimage{
+    background-image: url(../imgs/header.jpg);
+    width: 100%;
+    height: 30em;
+    color:$title;
+}
+.ser{
+    color: $title;
+    margin-top: $margen;
+}
+.selected-menu{
+    color: $title;
+    background-color:#4bcaff ;
+    width: 100%;
+   
+   
+}
+.menu{
+    margin-top: 5em;
+}
+.coff{
+    font-size: .8em;
+}
+.hser{
+    text-decoration-line: underline;
+    color: $title;
+   
+}
+
+.por{
+    color: $fondo;
+   margin-top: $margen;
+}
+.porall{
+    color: #4bcaff;
+   margin-top: $margen;
+}
+.hpor{
+    text-decoration-line: underline;
+    color: $fondo;
+  
+}
+.selected-port{
+    color: $fondo;
+    background-color:$title ;
+    width: 100%;
+   
+  
+}
+.contjust{
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: $fondo;
+}
+.just{
+    width: 7em;
+    color:$fondo
+}
+h2{//subrayado de la palabra
+    &:after{
+        content:'';
+        display:block;
+        width: 1.5 em;
+        padding-top:.05em;
+        border-bottom:2px solid black;
+    }
+      
+    }
+@media (max-width: 800px) {
+    .image{
+        width: 160px; 
+        margin-top: $margen;
+    }
+  
+.imagejust{
+    width: 100%;
+    height: 12em;
+    margin-top: 2em;
+}
+.box {
+  border: 1px solid #333333;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+
+}
