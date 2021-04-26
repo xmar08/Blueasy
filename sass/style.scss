@@ -6,6 +6,8 @@ $title: #fff;
 $margen:2rem;
 body{
     background: $fondo;
+    padding-left: 0%;
+    padding-right: 0%;
 
     @include respond-to($phone){
     
@@ -14,76 +16,134 @@ body{
         background: rgb(113, 240, 240);  
       }
 }
+//nav*****************
+.nav{
+    background: $nav-bg;
+    padding: 1em 10%;
+    position: fixed; 
+    width: 100%; 
+}
+.Bluasy{
+    text-align: left;
+    color: $title;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: NotoBold;
+    text-decoration: none;
+}
+.e{
+    color: $light-blue;
+}
+.barra{
+    text-decoration: none;
+    color: $title;
+    &:hover{
+        color: $title;
+    }
+}
 .col-sm-2{
     background: $fondo;
     color: rgb(255, 249, 249);
 }
-.cont{
-    padding-left: 0%;
-    padding-right: 0%;
-
-}
-.heat{
-    width: 100%;
-    height: 80%;
-}
-.blue{
-    margin-right: 8rem;
-    margin-left: 3rem;
-}
-.e{
-    left: -11.6rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    margin-top: -3px; ;
-}
-
-.row{
-margin-left: 0em;
-margin-right: 0em;
-}
 .centertitle{
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.bimage{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .bimage{
     background-image: url(../imgs/header.jpg);
-    width: 100%;
-    height: 30em;
-    color:$title;
+    background-size: cover;
+    background-position: bottom;
+    padding: 15em 15%;
+  }
+  
+//servicios
+.serv{
+    background: $light-blue;
+    color: $title;
+    padding: 3em 15%;
+
+    
+}
+.row {
+    --bs-gutter-x: 0;
 }
 .ser{
+    display: block;
     color: $title;
     margin-top: $margen;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: NotoLight;
+    text-decoration: none;
 }
-.selected-menu{
+
+.span-ser{
+    border-bottom: 3px solid;
+}
+
+
+.menu-ser{
     color: $title;
     background-color:#4bcaff ;
-    width: 100%;
-   
+    padding-left: 10%;
+    padding-right: 10%;
    
 }
 .menu{
     margin-top: 5em;
 }
-.coff{
-    font-size: .8em;
+.colna{
+    display: block;
+    padding: 2em 0;
+    margin: 0;
 }
-.hser{
-    text-decoration-line: underline;
-    color: $title;
-   
+.coff{
+    font-size: .6em;
+}
+//PORTFOLIO
+
+.barrapor{
+    text-decoration: none;
+    color: $fondo;
+    &:hover{
+        color: $fondo;
+    }
 }
 
-.por{
+
+
+.menu-por{
     color: $fondo;
-   margin-top: $margen;
+    background-color:$title ;
+    padding-left: 10%;
+    padding-right: 10%;
+   
 }
+.por{
+    display: block;
+    color: $fondo;
+    margin-top: $margen;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: NotoLight;
+    text-decoration: none;
+}
+
 .porall{
-    color: #4bcaff;
-   margin-top: $margen;
+        color: $fondo;
+        text-decoration: none;
+        margin: 0;
+        padding: .3em .8em;
+        &:hover{
+            color: $light-blue;
+        padding: .2em .7em;
+        border: .1em solid $light-blue;
+        }
+    
 }
 .hpor{
     text-decoration-line: underline;
@@ -106,22 +166,134 @@ margin-right: 0em;
     width: 7em;
     color:$fondo
 }
+
 h2{//subrayado de la palabra
     &:after{
-        content:'';
+      
         display:block;
         width: 1.5 em;
         padding-top:.05em;
-        border-bottom:2px solid black;
+        border-bottom:2px ;
     }
       
     }
+    .logo{
+    user-select:('NotoBold', 2em, $title);
+    transition: all ease .5s;
+
+    &:hover{
+        color: $light-blue;
+        text-decoration: none;
+    }
+}
+
+//DEFAULT
+.menu-def{
+    color: $title;
+    background-color:#515f67 ;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+}
+.def{
+    display: block;
+    color: $title;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: NotoLight;
+    text-decoration: none;
+}
+
+.defaul{
+    font-size: .6em;
+}
+
+.video{
+    width: auto;
+    height: 100%;
+}
+
+.visit{
+    color: #353f46;
+    text-decoration: none;
+    margin: 0;
+    padding: .3em .8em;
+    &:hover{
+        color:#353f46;
+    padding: .2em .7em;
+    border: .1em solid #353f46;
+    }
+}
+//twitter
+.icon{
+    margin-left: 64em;
+    margin-top: -8em;
+}
+.twit{
+    margin: 0;
+    padding: 2em 0 .5em;
+    font-family: NotoLight;
+    color: $title;
+    text-align: left;
+    font-size: 1.5em;
+   
+}
+.cheesecase{
+    font-size: .8em;
+    font-family: NotoRegular;
+}
+
+//Who is jonh doe
+.menu-who{
+    color: $title;
+    background-image: url(../imgs/camera.jpg);
+    padding-left: 10%;
+    padding-right: 10%;
+    background-size: cover;
+}
+.icon-who{
+    border: .1em solid $title;
+    padding: 1em;
+    margin-top: 1em;
+    float: left;
+    &:hover{
+        border: .1em solid $light-blue;
+    }
+}
+
+//Testimonial
+.menu-tes{
+    color: $fondo;
+    background-color:$title;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-size: cover;
+}
+.test{
+    margin: 0;
+    padding: 2em 0 .5em;
+    font-family: NotoLight;
+    color: $fondo;
+    text-align: left;
+    font-size: 1.5em;
+   
+}
+.walter{
+    font-size: .8em;
+    font-family: NotoRegular;
+    color:$light-blue
+}
+
+//*********************************************media
 @media (max-width: 800px) {
     .image{
         width: 160px; 
         margin-top: $margen;
     }
-  
+}
 .imagejust{
     width: 100%;
     height: 12em;
@@ -133,5 +305,13 @@ h2{//subrayado de la palabra
   height: 100px;
   overflow: hidden;
 }
-
+.who{
+    margin: 0;
+  
+    font-family: NotoLight;
+    color: $title;
+    text-align: left;
+    font-size: 1em;
+   
 }
+
