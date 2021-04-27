@@ -1,8 +1,10 @@
+//Xinia Aguilar
 @import 'fonts';
 @import 'vars';
 @import 'media-queries';
 $fondo:#353f46;
 $title: #fff;
+$blu:#4bcaff;
 $margen:2rem;
 body{
     background: $fondo;
@@ -16,24 +18,35 @@ body{
         background: rgb(113, 240, 240);  
       }
 }
-//nav*****************
+//nav**********************************
 .nav{
-    background: $nav-bg;
+    background: $fondo;
     padding: 1em 10%;
     position: fixed; 
-    width: 100%; 
+    width: 80%; 
 }
-.Bluasy{
-    text-align: left;
+.menu-nav{
     color: $title;
+    background-color:$fondo;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+}
+.bluasy{
+    display: block;
+    color: $title;
+    margin-top: $margen;
+    text-align: left;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 30px;
     font-family: NotoBold;
     text-decoration: none;
 }
+
 .e{
-    color: $light-blue;
+    color: $blu;
 }
+
 .barra{
     text-decoration: none;
     color: $title;
@@ -41,33 +54,52 @@ body{
         color: $title;
     }
 }
+
+.pornav{
+    color: $title;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: NotoBold;
+    margin: 0;
+    padding: .3em .8em;
+    &:hover{
+        color: $blu;
+    padding: .2em .7em;
+    border: .1em solid $blu;
+    }
+
+}
+
 .col-sm-2{
     background: $fondo;
     color: rgb(255, 249, 249);
 }
 .centertitle{
     display: flex;
-    flex-direction: column;
+    
     justify-content: center;
     text-align: center;
+    font-size: 42px;
+    font-family: NotoLight;
+    
   }
   .bimage{
     background-image: url(../imgs/header.jpg);
     background-size: cover;
     background-position: bottom;
-    padding: 15em 15%;
+    padding: 5em 10%;
   }
-  
+ //*********************************************************** 
 //servicios
-.serv{
-    background: $light-blue;
-    color: $title;
-    padding: 3em 15%;
-
-    
-}
 .row {
     --bs-gutter-x: 0;
+}
+.menu-ser{
+    color: $title;
+    background-color:$blu ;
+    padding-left: 10%;
+    padding-right: 10%;
+   
 }
 .ser{
     display: block;
@@ -75,7 +107,7 @@ body{
     margin-top: $margen;
     text-align: left;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 30px;
     font-family: NotoLight;
     text-decoration: none;
 }
@@ -83,38 +115,22 @@ body{
 .span-ser{
     border-bottom: 3px solid;
 }
-
-
-.menu-ser{
-    color: $title;
-    background-color:#4bcaff ;
-    padding-left: 10%;
-    padding-right: 10%;
-   
-}
-.menu{
-    margin-top: 5em;
-}
 .colna{
     display: block;
-    padding: 2em 0;
-    margin: 0;
+    margin: 0em;
+}
+.tituser{
+    font-size: 24px;
+    font-family: NotoRegular;
 }
 .coff{
-    font-size: .6em;
+    font-size: 12px;
+    font-family: NotoRegular;
+    padding-right: 20px;
 }
+
+//********************************************************
 //PORTFOLIO
-
-.barrapor{
-    text-decoration: none;
-    color: $fondo;
-    &:hover{
-        color: $fondo;
-    }
-}
-
-
-
 .menu-por{
     color: $fondo;
     background-color:$title ;
@@ -128,7 +144,7 @@ body{
     margin-top: $margen;
     text-align: left;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 30px;
     font-family: NotoLight;
     text-decoration: none;
 }
@@ -137,60 +153,20 @@ body{
         color: $fondo;
         text-decoration: none;
         margin: 0;
+        font-size: 14px;
+        font-family: NotoBold;
         padding: .3em .8em;
         &:hover{
-            color: $light-blue;
+        color: $blu;
         padding: .2em .7em;
-        border: .1em solid $light-blue;
+        border: .1em solid $blu;
         }
-    
-}
-.hpor{
-    text-decoration-line: underline;
-    color: $fondo;
-  
-}
-.selected-port{
-    color: $fondo;
-    background-color:$title ;
-    width: 100%;
-   
-  
-}
-.contjust{
-    padding-left: 0%;
-    padding-right: 0%;
-    background-color: $fondo;
-}
-.just{
-    width: 7em;
-    color:$fondo
-}
-
-h2{//subrayado de la palabra
-    &:after{
-      
-        display:block;
-        width: 1.5 em;
-        padding-top:.05em;
-        border-bottom:2px ;
-    }
-      
-    }
-    .logo{
-    user-select:('NotoBold', 2em, $title);
-    transition: all ease .5s;
-
-    &:hover{
-        color: $light-blue;
-        text-decoration: none;
-    }
-}
-
+ }
+//************************************************
 //DEFAULT
 .menu-def{
     color: $title;
-    background-color:#515f67 ;
+    background-color:$fondo ;
     padding-left: 10%;
     padding-right: 10%;
    
@@ -198,39 +174,47 @@ h2{//subrayado de la palabra
 .def{
     display: block;
     color: $title;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-align: left;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 30px;
     font-family: NotoLight;
     text-decoration: none;
 }
 
 .defaul{
-    font-size: .6em;
+    font-size: 14px;
+    font-family: NotoRegular;
+  
 }
-
+.p{
+    width: 100%;
+}
 .video{
     width: auto;
     height: 100%;
 }
 
 .visit{
-    color: #353f46;
+    color:$fondo;
     text-decoration: none;
     margin: 0;
     padding: .3em .8em;
+    font-size: 14px;
+    font-family: NotoBold;
     &:hover{
-        color:#353f46;
+    color:$fondo;
     padding: .2em .7em;
-    border: .1em solid #353f46;
+    border: .1em solid $fondo;
     }
 }
+
+//************************************************
 //twitter
 .icon{
-    margin-left: 64em;
-    margin-top: -8em;
+    margin-left: 52em;
+    margin-top: -6em;
 }
 .twit{
     margin: 0;
@@ -245,7 +229,7 @@ h2{//subrayado de la palabra
     font-size: .8em;
     font-family: NotoRegular;
 }
-
+//*****************************************************
 //Who is jonh doe
 .menu-who{
     color: $title;
@@ -259,11 +243,23 @@ h2{//subrayado de la palabra
     padding: 1em;
     margin-top: 1em;
     float: left;
+    margin-right: 2em;
+    position: static;
+    width: 4em;
+    height: 4em;
+
     &:hover{
-        border: .1em solid $light-blue;
+        border: .1em solid $blu;
     }
 }
-
+.who{
+    margin: 0;
+    font-family: NotoRegular;
+    color: $title;
+    text-align: left;
+    font-size: 14px;
+   
+}
 //Testimonial
 .menu-tes{
     color: $fondo;
@@ -272,20 +268,95 @@ h2{//subrayado de la palabra
     padding-right: 10%;
     background-size: cover;
 }
+
 .test{
     margin: 0;
     padding: 2em 0 .5em;
     font-family: NotoLight;
     color: $fondo;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 30px;
+   
+}
+.atest{
+    margin: 0;
+    font-family: NotoLigh;
+    color: $fondo;
+    text-align: left;
+    font-size: 28px;
    
 }
 .walter{
-    font-size: .8em;
-    font-family: NotoRegular;
-    color:$light-blue
+    font-size: 14px;
+    font-family: NotoBold;
+    color:$blu
 }
+//**************************************
+//Contacto
+.menu-conta{
+    color: $title;
+    background-image: url(../imgs/contact.jpg);
+    padding-left: 10%;
+    padding-right: 10%;
+    background-size: cover;
+}
+
+.form{
+    background-color: transparent;
+    width: 23em;
+}
+.forme{
+    background-color: transparent;
+    width: 90%;
+}
+.mess{
+    background-color: $blu;
+    width: 20em;
+}
+//***********************
+//FOOTER
+.foo{
+    background-color: #353f47;
+}
+
+.menu-for{
+    color: $fondo;
+    background-color:#353f47 ;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+}
+
+.porfor{
+    color: $title;
+    text-decoration: none;
+    margin: 0;
+    font-size: 12px;
+    font-family: Notoregular;
+    padding: .3em .8em;
+    &:hover{
+    color: $blu;
+    padding: .2em .7em;
+    border: .1em solid $blu;
+    }
+}
+
+.dos{
+    color: $title;
+    text-decoration: none;
+    margin-left:35em;
+    font-size: 12px;
+    font-family: Notoregular;
+    padding: .3em .8em;
+    
+}
+
+
+
+
+
+
+
 
 //*********************************************media
 @media (max-width: 800px) {
@@ -305,13 +376,5 @@ h2{//subrayado de la palabra
   height: 100px;
   overflow: hidden;
 }
-.who{
-    margin: 0;
-  
-    font-family: NotoLight;
-    color: $title;
-    text-align: left;
-    font-size: 1em;
-   
-}
+
 
