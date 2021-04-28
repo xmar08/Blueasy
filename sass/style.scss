@@ -23,14 +23,16 @@ body{
     background: $fondo;
     padding: 1em 10%;
     position: fixed; 
-    width: 80%; 
+    width: 80vw; 
 }
 .menu-nav{
     color: $title;
     background-color:$fondo;
     padding-left: 10%;
     padding-right: 10%;
-   
+    background-position-y: center;
+    background-position-x: center;
+    width: 98vw;
 }
 .bluasy{
     display: block;
@@ -41,6 +43,7 @@ body{
     font-size: 30px;
     font-family: NotoBold;
     text-decoration: none;
+    width: 100vw;
 }
 
 .e{
@@ -86,8 +89,11 @@ body{
   .bimage{
     background-image: url(../imgs/header.jpg);
     background-size: cover;
-    background-position: bottom;
-    padding: 5em 10%;
+    padding: 4em 10%;
+    width: 78vw;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
   }
  //*********************************************************** 
 //servicios
@@ -162,6 +168,22 @@ body{
         border: .1em solid $blu;
         }
  }
+ 
+  .portfolio{
+    display: inline-block;
+    cursor: pointer;
+ }
+ .col-sm-3{
+    flex: 0 0 auto;
+    width: 25%;
+    padding: 1em;
+}
+.mas{
+    margin-top: -11em;
+    text-align: center;
+    font-size: 14px;
+    font-family: NotoBold;
+}
 //************************************************
 //DEFAULT
 .menu-def{
@@ -181,6 +203,7 @@ body{
     font-size: 30px;
     font-family: NotoLight;
     text-decoration: none;
+    width: 100%;
 }
 
 .defaul{
@@ -192,8 +215,9 @@ body{
     width: 100%;
 }
 .video{
-    width: auto;
-    height: 100%;
+    width: 50vw;
+    height: 67%;
+  margin-top: 4em;
 }
 
 .visit{
@@ -213,7 +237,7 @@ body{
 //************************************************
 //twitter
 .icon{
-    margin-left: 52em;
+    margin-left: 52vw;
     margin-top: -6em;
 }
 .twit{
@@ -258,7 +282,7 @@ body{
     color: $title;
     text-align: left;
     font-size: 14px;
-   
+    padding: 4em;
 }
 //Testimonial
 .menu-tes{
@@ -303,29 +327,18 @@ body{
 
 .form{
     background-color: transparent;
-    width: 23em;
+    width: 23vw;
 }
 .forme{
     background-color: transparent;
-    width: 90%;
+    width: 61vw;
 }
 .mess{
     background-color: $blu;
-    width: 20em;
+    width: 20vw;
 }
 //***********************
 //FOOTER
-.foo{
-    background-color: #353f47;
-}
-
-.menu-for{
-    color: $fondo;
-    background-color:#353f47 ;
-    padding-left: 10%;
-    padding-right: 10%;
-   
-}
 
 .porfor{
     color: $title;
@@ -334,6 +347,7 @@ body{
     font-size: 12px;
     font-family: Notoregular;
     padding: .3em .8em;
+    width: 80vw; 
     &:hover{
     color: $blu;
     padding: .2em .7em;
@@ -359,7 +373,7 @@ body{
 
 
 //*********************************************media
-@media (max-width: 800px) {
+@media (min-width: 400px) and (max-width: 800px) {
     .image{
         width: 160px; 
         margin-top: $margen;
@@ -377,4 +391,264 @@ body{
   overflow: hidden;
 }
 
+@media (min-width: 980px) and (max-width: 1200px) {
+    .barra {
+        margin-left: -1em;
+    }
+    .icon-who {
+        border: 0.1em solid #fff;
+        padding: 1em;
+        position: center;
+        width: 3.5em;
+        height: 4em;
+        margin-right: 1em;
+    }
+    .def {
+        font-size: 28px;  
+    }
+    .porfor {
+        padding: 0em 0em;  
+        margin-right: 97px;
+    }
+    .dos {
+      
+        margin-left: 4em;
+    }
+    .icon {
+        margin-left: 66vw;
+        
+    }
+    .video {
+        width: 37vw;
+        margin-left: 2em;
+    }
+}
+@media (min-width: 767px) and (max-width: 979px) {
+    .icon {
+        margin-left: 61vw;
+        
+    }
+    .navbar{
+        align-items: baseline;
+    }
+    .icon-who {
+       
+        margin-right: 0.2em;
+        width: 3.5em;
+    }  
+    .def {
+        font-size: 22px;  
+    }
+   
+    .mas {
+        margin-top: -5em;
+    }
+    .ser{
+        font-size: 22px;   
+    }
+    .por{
+        font-size: 22px;   
+    }
+    .bluasy{
+        font-size: 22px;   
+    }
+    .test{
+        font-size: 22px;   
+    }
+    .porfor {
+        padding: 0em 0em;  
+        margin-left: 4em;
+    }
+    .porall{
+        font-size: 11px; 
+    }
+    .dos {
+      
+        margin-left: 4em;
+    }
+    
+    .video {
+        width: 35vw;
+        margin-left: 2em;
+    }
+}
 
+@media (min-width: 480px) and (max-width: 766px) {
+    .body{
+    width: 70vw;
+    }
+    .icon {
+        margin-left: 43vw;
+        
+    }
+    .nav{
+        margin-left: 0em;
+        width: 83vw;
+    }
+    .navbar{
+        align-items: baseline;
+    }
+    .menu-nav{
+    background-position-y: center;
+    background-position-x: center;
+    width: 100vw;
+    }
+    .bimage{
+        width: 80vw;
+    }
+    .icon-who {
+       
+        margin-right: 0.4em;
+        width: 3.5em;
+    } 
+    .menu-who{
+      width: 83vw;
+        
+    }
+    .who{
+       padding: 1m; 
+       font-size: 12px;
+    } 
+    .def {
+        font-size: 22px;  
+        width: 63vw;
+        height: 15%;
+    }
+   
+    .mas {
+        margin-top: -3em;
+    }
+    .ser{
+        font-size: 22px;   
+    }
+    .por{
+        font-size: 22px;   
+    }
+    .bluasy{
+        font-size: 22px;   
+    }
+    .test{
+        font-size: 22px;   
+    }
+    .porfor {
+        padding: 0em 0em;  
+        margin-left: 4em;
+    }
+    .porall{
+        font-size: 11px; 
+    }
+    .dos {
+      
+        margin-left: 4em;
+    }
+    
+    .video {
+        width: 60vw;
+       margin-top: -9em;
+       margin-bottom: -4em;
+    }
+    .mt-3 {
+        margin-top: 0rem !important;
+    }
+    .menu-conta{
+        width: 83vw;
+    }
+    .forme{
+        width: 51vw;
+    }
+    .menu-por{
+        padding-left: 6%;
+        padding-right: 0%;
+        width: 83vw;
+    }
+}
+
+    @media (min-width: 413px) and (max-width: 479px) {
+        .body{
+        width: 70vw;
+        }
+        .icon {
+            margin-left: 43vw;
+            
+        }
+        .nav{
+            margin-left: 0em;
+            width: 83vw;
+        }
+        .navbar{
+            align-items: baseline;
+        }
+        .menu-nav{
+        background-position-y: center;
+        background-position-x: center;
+        width: 100vw;
+        }
+        .bimage{
+            width: 80vw;
+        }
+        .icon-who {
+           
+            margin-right: 0.4em;
+            width: 3.5em;
+        } 
+        .menu-who{
+          width: 83vw;
+            
+        }
+        .who{
+           padding: 1m; 
+           font-size: 12px;
+        } 
+        .def {
+            font-size: 22px;  
+            width: 63vw;
+            height: 15%;
+        }
+       
+        .mas {
+            margin-top: -3em;
+        }
+        .ser{
+            font-size: 22px;   
+        }
+        .por{
+            font-size: 22px;   
+        }
+        .bluasy{
+            font-size: 22px;   
+        }
+        .test{
+            font-size: 22px;   
+        }
+        .porfor {
+            padding: 0em 0em;  
+            margin-left: 4em;
+        }
+        .porall{
+            font-size: 11px; 
+        }
+        .dos {
+          
+            margin-left: 4em;
+        }
+        
+        .video {
+            width: 60vw;
+           margin-top: -9em;
+           margin-bottom: -4em;
+        }
+        .mt-3 {
+            margin-top: 0rem !important;
+        }
+        .menu-conta{
+            width: 83vw;
+        }
+        .forme{
+            width: 51vw;
+        }
+        .menu-por{
+            padding-left: 6%;
+            padding-right: 0%;
+            width: 83vw;
+        }
+    }
