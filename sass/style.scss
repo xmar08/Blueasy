@@ -2,41 +2,50 @@
 @import 'fonts';
 @import 'vars';
 @import 'media-queries';
-$fondo:#353f46;
-$title: #fff;
-$blu:#4bcaff;
 $margen:2rem;
 body{
-    background: $fondo;
+    background: $dark-bg;
     padding-left: 0%;
     padding-right: 0%;
 
     @include respond-to($phone){
-    
-    }
-    @include respond-to($tablet-portrait){
+        width: 70vw;
+       }
+    @include respond-to($phone){
         background: rgb(113, 240, 240);  
       }
 }
 //nav**********************************
 .nav{
-    background: $fondo;
+    background: $dark-bg;
     padding: 1em 10%;
     position: fixed; 
     width: 80vw; 
+    @include respond-to($phone){
+        margin-left: 0em;
+        width: 86vw;  
+      }
+}
+.navbar{
+    align-items: baseline;
 }
 .menu-nav{
-    color: $title;
-    background-color:$fondo;
+    color: $white-copy;
+    background-color:$dark-bg;
     padding-left: 10%;
     padding-right: 10%;
     background-position-y: center;
     background-position-x: center;
     width: 98vw;
+    @include respond-to($phone){
+        background-position-y: center;
+        background-position-x: center;
+         width: 100vw;
+      }
 }
 .bluasy{
     display: block;
-    color: $title;
+    color: $white-copy;
     margin-top: $margen;
     text-align: left;
     text-transform: uppercase;
@@ -44,37 +53,43 @@ body{
     font-family: NotoBold;
     text-decoration: none;
     width: 100vw;
+    @include respond-to($phone){
+        font-size: 22px;     
+    }
+    @include respond-to($tablet-landscape){
+        font-size: 22px;  
+    }
 }
 
 .e{
-    color: $blu;
+    color: $light-blue;
 }
 
 .barra{
     text-decoration: none;
-    color: $title;
+    color: $white-copy;
     &:hover{
-        color: $title;
+        color: $white-copy;
     }
 }
 
 .pornav{
-    color: $title;
+    color: $white-copy;
     text-decoration: none;
     font-size: 14px;
     font-family: NotoBold;
     margin: 0;
     padding: .3em .8em;
     &:hover{
-        color: $blu;
+        color: $light-blue;
     padding: .2em .7em;
-    border: .1em solid $blu;
+    border: .1em solid $light-blue;
     }
 
 }
 
 .col-sm-2{
-    background: $fondo;
+    background: $dark-bg;
     color: rgb(255, 249, 249);
 }
 .centertitle{
@@ -94,6 +109,11 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
+    @include respond-to($phone){
+        width: 86vw;
+        margin-top: 6em;  
+    }
+
   }
  //*********************************************************** 
 //servicios
@@ -101,21 +121,28 @@ body{
     --bs-gutter-x: 0;
 }
 .menu-ser{
-    color: $title;
-    background-color:$blu ;
+    color: $white-copy;
+    background-color:$light-blue ;
     padding-left: 10%;
     padding-right: 10%;
    
 }
 .ser{
     display: block;
-    color: $title;
+    color: $white-copy;
     margin-top: $margen;
     text-align: left;
     text-transform: uppercase;
     font-size: 30px;
     font-family: NotoLight;
     text-decoration: none;
+    @include respond-to($phone){
+        font-size: 22px;   
+    }
+    @include respond-to($tablet-landscape){
+        font-size: 22px; 
+    }
+
 }
 
 .span-ser{
@@ -138,35 +165,53 @@ body{
 //********************************************************
 //PORTFOLIO
 .menu-por{
-    color: $fondo;
-    background-color:$title ;
+    color: $dark-bg;
+    background-color:$white-copy ;
     padding-left: 10%;
     padding-right: 10%;
-   
+    @include respond-to($phone){
+        padding-left: 6%;
+        padding-right: 0%;
+        width: 86vw;  
+    }
 }
 .por{
     display: block;
-    color: $fondo;
+    color: $dark-bg;
     margin-top: $margen;
     text-align: left;
     text-transform: uppercase;
     font-size: 30px;
     font-family: NotoLight;
     text-decoration: none;
+    @include respond-to($phone){
+        font-size: 22px;    
+    }
+    @include respond-to($tablet-landscape){
+        font-size: 22px;   
+    }
+
 }
 
 .porall{
-        color: $fondo;
+        color: $dark-bg;
         text-decoration: none;
         margin: 0;
         font-size: 14px;
         font-family: NotoBold;
         padding: .3em .8em;
         &:hover{
-        color: $blu;
+        color: $light-blue;
         padding: .2em .7em;
-        border: .1em solid $blu;
+        border: .1em solid $light-blue;
         }
+        @include respond-to($phone){
+            font-size: 11px; 
+        }
+        @include respond-to($tablet-landscape){
+            font-size: 11px; 
+        }
+    
  }
  
   .portfolio{
@@ -183,19 +228,26 @@ body{
     text-align: center;
     font-size: 14px;
     font-family: NotoBold;
+    @include respond-to($phone){
+        margin-top: -3em;   
+    }
+    @include respond-to($tablet-landscape){
+        margin-top: -5em;
+    }
+
 }
 //************************************************
 //DEFAULT
 .menu-def{
-    color: $title;
-    background-color:$fondo ;
+    color: $white-copy;
+    background-color:$dark-bg ;
     padding-left: 10%;
     padding-right: 10%;
    
 }
 .def{
     display: block;
-    color: $title;
+    color: $white-copy;
     margin-top: 1em;
     margin-bottom: 1em;
     text-align: left;
@@ -204,6 +256,14 @@ body{
     font-family: NotoLight;
     text-decoration: none;
     width: 100%;
+    @include respond-to($phone){
+        font-size: 22px;  
+        width: 63vw;
+        height: 15%;   
+    }
+    @include respond-to($tablet-landscape){
+        font-size: 22px;  
+    }
 }
 
 .defaul{
@@ -217,20 +277,33 @@ body{
 .video{
     width: 50vw;
     height: 67%;
-  margin-top: 4em;
+    margin-top: 4em;
+    @include respond-to($phone){
+    width: 103vw;
+    margin-top: -2em;
+    margin-bottom: 1em;
+    height: 179px;
+    margin-left: -5em; 
+    }
+    @include respond-to($tablet-landscape){
+        width: 35vw;
+        margin-left: 2em;
+        height: 179px;
+    }
+
 }
 
 .visit{
-    color:$fondo;
+    color:$dark-bg;
     text-decoration: none;
     margin: 0;
     padding: .3em .8em;
     font-size: 14px;
     font-family: NotoBold;
     &:hover{
-    color:$fondo;
+    color:$dark-bg;
     padding: .2em .7em;
-    border: .1em solid $fondo;
+    border: .1em solid $dark-bg;
     }
 }
 
@@ -239,12 +312,18 @@ body{
 .icon{
     margin-left: 52vw;
     margin-top: -6em;
+    @include respond-to($phone){
+        margin-left: 58vw;
+       }
+       @include respond-to($tablet-landscape){
+        margin-left: 61vw;
+       }
 }
 .twit{
     margin: 0;
     padding: 2em 0 .5em;
     font-family: NotoLight;
-    color: $title;
+    color: $white-copy;
     text-align: left;
     font-size: 1.5em;
    
@@ -256,14 +335,17 @@ body{
 //*****************************************************
 //Who is jonh doe
 .menu-who{
-    color: $title;
+    color: $white-copy;
     background-image: url(../imgs/camera.jpg);
     padding-left: 10%;
     padding-right: 10%;
     background-size: cover;
+    @include respond-to($phone){
+        width: 86vw;  
+    }
 }
 .icon-who{
-    border: .1em solid $title;
+    border: .1em solid $white-copy;
     padding: 1em;
     margin-top: 1em;
     float: left;
@@ -273,21 +355,33 @@ body{
     height: 4em;
 
     &:hover{
-        border: .1em solid $blu;
+        border: .1em solid $light-blue;
     }
+    @include respond-to($phone){
+        margin-right: 0.4em;
+        width: 3.5em;  
+    }
+    @include respond-to($tablet-landscape){
+        margin-right: 0.2em;
+        width: 3.5em;
+       }
 }
 .who{
     margin: 0;
     font-family: NotoRegular;
-    color: $title;
+    color: $white-copy;
     text-align: left;
     font-size: 14px;
-    padding: 4em;
+    padding-right: 4em;
+    @include respond-to($phone){
+        padding: 1m; 
+        font-size: 12px;  
+    }
 }
 //Testimonial
 .menu-tes{
-    color: $fondo;
-    background-color:$title;
+    color: $dark-bg;
+    background-color:$white-copy;
     padding-left: 10%;
     padding-right: 10%;
     background-size: cover;
@@ -297,15 +391,20 @@ body{
     margin: 0;
     padding: 2em 0 .5em;
     font-family: NotoLight;
-    color: $fondo;
+    color: $dark-bg;
     text-align: left;
     font-size: 30px;
-   
+    @include respond-to($phone){
+        font-size: 22px;     
+    }
+    @include respond-to($tablet-landscape){
+        font-size: 22px;
+    }
 }
 .atest{
     margin: 0;
     font-family: NotoLigh;
-    color: $fondo;
+    color: $dark-bg;
     text-align: left;
     font-size: 28px;
    
@@ -313,35 +412,53 @@ body{
 .walter{
     font-size: 14px;
     font-family: NotoBold;
-    color:$blu
+    color:$light-blue
 }
 //**************************************
 //Contacto
 .menu-conta{
-    color: $title;
+    color: $white-copy;
     background-image: url(../imgs/contact.jpg);
     padding-left: 10%;
     padding-right: 10%;
     background-size: cover;
+    @include respond-to($phone){
+        width: 86vw;   
+    }
 }
 
 .form{
     background-color: transparent;
     width: 23vw;
+    @include respond-to($phone){
+        width: 68vw;   
+    }
 }
 .forme{
     background-color: transparent;
     width: 61vw;
+    @include respond-to($phone){
+        width: 67vw;    
+    }
 }
 .mess{
-    background-color: $blu;
+    background-color: $light-blue;
     width: 20vw;
+}
+.mt-3{
+@include respond-to($phone){
+    margin-top: 0rem !important;  
+}
+@include respond-to($tablet-landscape){
+    margin-top: -2rem !important; 
+}
+
 }
 //***********************
 //FOOTER
 
 .porfor{
-    color: $title;
+    color: $white-copy;
     text-decoration: none;
     margin: 0;
     font-size: 12px;
@@ -349,306 +466,38 @@ body{
     padding: .3em .8em;
     width: 80vw; 
     &:hover{
-    color: $blu;
+    color: $light-blue;
     padding: .2em .7em;
-    border: .1em solid $blu;
+    border: .1em solid $light-blue;
+    }
+    @include respond-to($phone){
+        padding: 0em 0em;  
+        margin-left: 4em;   
+    }
+    @include respond-to($tablet-landscape){
+        padding: 0em 0em;  
+        margin-left: 4em;
     }
 }
 
 .dos{
-    color: $title;
+    color: $white-copy;
     text-decoration: none;
-    margin-left:35em;
+    margin-left:83em;
     font-size: 12px;
     font-family: Notoregular;
     padding: .3em .8em;
-    
-}
-
-
-
-
-
-
-
-
-//*********************************************media
-@media (min-width: 400px) and (max-width: 800px) {
-    .image{
-        width: 160px; 
-        margin-top: $margen;
+    @include respond-to($phone){
+        margin-left: 4em;  
     }
-}
-.imagejust{
-    width: 100%;
-    height: 12em;
-    margin-top: 2em;
-}
-.box {
-  border: 1px solid #333333;
-  width: 200px;
-  height: 100px;
-  overflow: hidden;
-}
-
-@media (min-width: 980px) and (max-width: 1200px) {
-    .barra {
-        margin-left: -1em;
-    }
-    .icon-who {
-        border: 0.1em solid #fff;
-        padding: 1em;
-        position: center;
-        width: 3.5em;
-        height: 4em;
-        margin-right: 1em;
-    }
-    .def {
-        font-size: 28px;  
-    }
-    .porfor {
-        padding: 0em 0em;  
-        margin-right: 97px;
-    }
-    .dos {
-      
+    @include respond-to($tablet-landscape){
         margin-left: 4em;
     }
-    .icon {
-        margin-left: 66vw;
-        
-    }
-    .video {
-        width: 37vw;
-        margin-left: 2em;
-    }
-}
-@media (min-width: 767px) and (max-width: 979px) {
-    .icon {
-        margin-left: 61vw;
-        
-    }
-    .navbar{
-        align-items: baseline;
-    }
-    .icon-who {
-       
-        margin-right: 0.2em;
-        width: 3.5em;
-    }  
-    .def {
-        font-size: 22px;  
-    }
-   
-    .mas {
-        margin-top: -5em;
-    }
-    .ser{
-        font-size: 22px;   
-    }
-    .por{
-        font-size: 22px;   
-    }
-    .bluasy{
-        font-size: 22px;   
-    }
-    .test{
-        font-size: 22px;   
-    }
-    .porfor {
-        padding: 0em 0em;  
-        margin-left: 4em;
-    }
-    .porall{
-        font-size: 11px; 
-    }
-    .dos {
-      
-        margin-left: 4em;
-    }
-    
-    .video {
-        width: 35vw;
-        margin-left: 2em;
-    }
 }
 
-@media (min-width: 480px) and (max-width: 766px) {
-    .body{
-    width: 70vw;
-    }
-    .icon {
-        margin-left: 43vw;
-        
-    }
-    .nav{
-        margin-left: 0em;
-        width: 83vw;
-    }
-    .navbar{
-        align-items: baseline;
-    }
-    .menu-nav{
-    background-position-y: center;
-    background-position-x: center;
-    width: 100vw;
-    }
-    .bimage{
-        width: 80vw;
-    }
-    .icon-who {
-       
-        margin-right: 0.4em;
-        width: 3.5em;
-    } 
-    .menu-who{
-      width: 83vw;
-        
-    }
-    .who{
-       padding: 1m; 
-       font-size: 12px;
-    } 
-    .def {
-        font-size: 22px;  
-        width: 63vw;
-        height: 15%;
-    }
-   
-    .mas {
-        margin-top: -3em;
-    }
-    .ser{
-        font-size: 22px;   
-    }
-    .por{
-        font-size: 22px;   
-    }
-    .bluasy{
-        font-size: 22px;   
-    }
-    .test{
-        font-size: 22px;   
-    }
-    .porfor {
-        padding: 0em 0em;  
-        margin-left: 4em;
-    }
-    .porall{
-        font-size: 11px; 
-    }
-    .dos {
-      
-        margin-left: 4em;
-    }
-    
-    .video {
-        width: 60vw;
-       margin-top: -9em;
-       margin-bottom: -4em;
-    }
-    .mt-3 {
-        margin-top: 0rem !important;
-    }
-    .menu-conta{
-        width: 83vw;
-    }
-    .forme{
-        width: 51vw;
-    }
-    .menu-por{
-        padding-left: 6%;
-        padding-right: 0%;
-        width: 83vw;
-    }
-}
 
-    @media (min-width: 413px) and (max-width: 479px) {
-        .body{
-        width: 70vw;
-        }
-        .icon {
-            margin-left: 43vw;
-            
-        }
-        .nav{
-            margin-left: 0em;
-            width: 83vw;
-        }
-        .navbar{
-            align-items: baseline;
-        }
-        .menu-nav{
-        background-position-y: center;
-        background-position-x: center;
-        width: 100vw;
-        }
-        .bimage{
-            width: 80vw;
-        }
-        .icon-who {
-           
-            margin-right: 0.4em;
-            width: 3.5em;
-        } 
-        .menu-who{
-          width: 83vw;
-            
-        }
-        .who{
-           padding: 1m; 
-           font-size: 12px;
-        } 
-        .def {
-            font-size: 22px;  
-            width: 63vw;
-            height: 15%;
-        }
-       
-        .mas {
-            margin-top: -3em;
-        }
-        .ser{
-            font-size: 22px;   
-        }
-        .por{
-            font-size: 22px;   
-        }
-        .bluasy{
-            font-size: 22px;   
-        }
-        .test{
-            font-size: 22px;   
-        }
-        .porfor {
-            padding: 0em 0em;  
-            margin-left: 4em;
-        }
-        .porall{
-            font-size: 11px; 
-        }
-        .dos {
-          
-            margin-left: 4em;
-        }
-        
-        .video {
-            width: 60vw;
-           margin-top: -9em;
-           margin-bottom: -4em;
-        }
-        .mt-3 {
-            margin-top: 0rem !important;
-        }
-        .menu-conta{
-            width: 83vw;
-        }
-        .forme{
-            width: 51vw;
-        }
-        .menu-por{
-            padding-left: 6%;
-            padding-right: 0%;
-            width: 83vw;
-        }
-    }
+
+
+
+
+
