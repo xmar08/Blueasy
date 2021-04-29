@@ -7,7 +7,7 @@ body{
     background: $dark-bg;
     padding-left: 0%;
     padding-right: 0%;
-
+    height: max-content;
     @include respond-to($phone){
         width: 70vw;
        }
@@ -104,14 +104,16 @@ body{
   .bimage{
     background-image: url(../imgs/header.jpg);
     background-size: cover;
-    padding: 4em 10%;
+    padding: 7em 10%;
     width: 78vw;
+    height: 25vw;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
     @include respond-to($phone){
-        width: 86vw;
-        margin-top: 6em;  
+    width: 86vw;
+    margin-top: 1em;
+    height: 25vw;
     }
 
   }
@@ -126,6 +128,9 @@ body{
     padding-left: 10%;
     padding-right: 10%;
    
+    @include respond-to($tablet-landscape){
+        height: 40vw;
+    }
 }
 .ser{
     display: block;
