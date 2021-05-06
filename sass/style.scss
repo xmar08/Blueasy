@@ -455,7 +455,8 @@ body{
     margin-top: 0rem !important;  
 }
 @include respond-to($tablet-landscape){
-    margin-top: -2rem !important; 
+    margin-top: -2rem !important;
+    padding: 10%; 
 }
 
 }
@@ -465,7 +466,7 @@ body{
 .porfor{
     color: $white-copy;
     text-decoration: none;
-    margin: 0;
+    margin-left: 6;
     font-size: 12px;
     font-family: Notoregular;
     padding: .3em .8em;
