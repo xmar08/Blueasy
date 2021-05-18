@@ -114,9 +114,66 @@ body {
 }
 
 .imagebusca {
-  width: 30px;
+  width: 25px;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+  margin-right: 2em;
 }
 
 .form-control {
   border-radius: 1.25rem;
+}
+
+.form {
+  background-color: #003366;
+  width: 300px;
+  height: 44px;
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #fff;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+.selector {
+  background-color: #003366;
+  color: #fff;
+}
+
+.event {
+  color: #fff;
+  background-color: #003366;
+  text-align: center;
+  width: 130px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  height: 44px;
+  border: 1px solid #003366;
+}
+
+.ti-event2 {
+  color: #fff;
+  background-color: #003366;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
