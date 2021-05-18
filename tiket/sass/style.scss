@@ -1,0 +1,116 @@
+$blue-bg:#000522;
+$light-blue:#003366;
+$badground:#002A4A;
+$texto:#fff;
+body{
+    
+    padding-left: 0%;
+    padding-right: 0%;
+    height: max-content;
+   
+}
+.row{
+    --bs-gutter-x: 0rem; 
+}
+.nav1{
+    background-color: $blue-bg;  
+    padding: 1em 10%;
+    width: 100vw; 
+    background-position-y: center;
+    background-position-x: center;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+}
+.titubarra{
+   color:$texto;
+   padding: 1em;
+   font-family: Roboto;
+   display: inline-block;
+   list-style: none
+}
+.carro{
+    width:30px;
+    margin-left: 30em;
+}
+
+.titubarra2{
+    color:black;
+    padding: 1em;
+    font-family: Roboto;
+ }
+ 
+ .nav2{
+    background-color: $light-blue;  
+    padding: 1em 10%;
+    width: 100vw; 
+    background-position-y: center;
+    background-position-x: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+}
+//***********fin nav
+//***************************
+.conta{
+background-color:$badground;
+
+}
+.CatButton {
+    font-weight: bold;
+    text-decoration: none;
+    color: $texto;
+    border: none;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+    cursor: pointer;
+    text-align: center;
+}
+.image{
+    padding-left: 10%;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.subtitu{
+  color: $texto;
+
+}
+.vl {
+    border-left: 6px solid $blue-bg;
+    height: 100px;
+  }
+  .logo{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+  }
+  //************************titulo evento
+  .ti-event{
+      color:$texto;
+      background-color: $blue-bg;
+      text-align: center;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top:0.5em;
+      padding-bottom:0.5em;
+  }
+  //***********************form evento
+  .buscar{
+    display: contents;
+  }
+  .imagebusca{
+    width:30px; 
+  }
+.form-control{
+    border-radius:1.25rem ;
+}
+
+
+

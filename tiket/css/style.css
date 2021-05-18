@@ -1,0 +1,122 @@
+body {
+  padding-left: 0%;
+  padding-right: 0%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.nav1 {
+  background-color: #000522;
+  padding: 1em 10%;
+  width: 100vw;
+  background-position-y: center;
+  background-position-x: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.titubarra {
+  color: #fff;
+  padding: 1em;
+  font-family: Roboto;
+  display: inline-block;
+  list-style: none;
+}
+
+.carro {
+  width: 30px;
+  margin-left: 30em;
+}
+
+.titubarra2 {
+  color: black;
+  padding: 1em;
+  font-family: Roboto;
+}
+
+.nav2 {
+  background-color: #003366;
+  padding: 1em 10%;
+  width: 100vw;
+  background-position-y: center;
+  background-position-x: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: block;
+}
+
+.conta {
+  background-color: #002A4A;
+}
+
+.CatButton {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.image {
+  padding-left: 10%;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.subtitu {
+  color: #fff;
+}
+
+.vl {
+  border-left: 6px solid #000522;
+  height: 100px;
+}
+
+.logo {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: block;
+}
+
+.ti-event {
+  color: #fff;
+  background-color: #000522;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.buscar {
+  display: contents;
+}
+
+.imagebusca {
+  width: 30px;
+}
+
+.form-control {
+  border-radius: 1.25rem;
+}
