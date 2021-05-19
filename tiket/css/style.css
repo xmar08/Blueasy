@@ -155,3 +155,56 @@ input {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
+
+.nombre-evento {
+  text-align: center;
+  color: black;
+  font-family: Roboto;
+}
+
+.lugar-evento {
+  text-align: center;
+  color: black;
+  font-family: Roboto;
+}
+
+.botton-evento {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: block;
+  text-align: center;
+  background-color: #003366;
+  font-family: Roboto;
+}
+
+.footer-back {
+  background-color: #000522;
+  color: #fff;
+}
+
+.footer-copy {
+  background-color: #003366;
+  color: #fff;
+}
+
+.footer-title {
+  color: #fff;
+  padding-left: 10%;
+  text-decoration: none;
+}
+
+.footer-icon {
+  width: 52px;
+  margin-left: 71em;
+  margin-top: -18em;
+}
+
+.footer-icon2 {
+  width: 44px;
+  margin-left: 71em;
+  margin-top: -9em;
+}
+
+.list {
+  margin-top: 5%;
+}

@@ -139,3 +139,49 @@ background-color:$badground;
   padding-top:0.5em;
   padding-bottom:0.5em;
 }
+//************************Galery
+.nombre-evento{
+  text-align: center;
+  color: black;
+  font-family: Roboto;
+}
+.lugar-evento{
+  text-align: center;
+  color: black;
+  font-family: Roboto;
+}
+.botton-evento{
+  align-content: center;
+  display: block;
+  text-align: center;
+  background-color: $light-blue;
+  font-family: Roboto;
+}
+
+//******************************Footer
+.footer-back{
+  background-color: $blue-bg;
+  color:$texto;
+}
+.footer-copy{
+  background-color: $light-blue;
+  color:$texto;
+}
+.footer-title{
+  color:$texto;
+  padding-left: 10%;
+  text-decoration: none;
+}
+.footer-icon{
+  width: 52px;
+  margin-left: 71em;
+  margin-top: -18em;
+}
+.footer-icon2{
+  width:44px;
+  margin-left: 71em;
+  margin-top: -9em;
+}
+.list{
+  margin-top: 5%;
+}
