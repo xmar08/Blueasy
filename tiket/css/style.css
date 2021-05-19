@@ -33,12 +33,6 @@ body {
   margin-left: 30em;
 }
 
-.titubarra2 {
-  color: black;
-  padding: 1em;
-  font-family: Roboto;
-}
-
 .nav2 {
   background-color: #003366;
   padding: 1em 10%;
@@ -52,17 +46,6 @@ body {
 
 .conta {
   background-color: #002A4A;
-}
-
-.CatButton {
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
-  border: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  cursor: pointer;
-  text-align: center;
 }
 
 .image {
@@ -150,11 +133,6 @@ input {
   height: 100%;
   width: 100%;
   padding: 6px 10px;
-}
-
-.selector {
-  background-color: #003366;
-  color: #fff;
 }
 
 .event {

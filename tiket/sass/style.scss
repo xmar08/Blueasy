@@ -34,11 +34,7 @@ body{
     margin-left: 30em;
 }
 
-.titubarra2{
-    color:black;
-    padding: 1em;
-    font-family: Roboto;
- }
+
  
  .nav2{
     background-color: $light-blue;  
@@ -56,17 +52,7 @@ body{
 background-color:$badground;
 
 }
-.CatButton {
-    font-weight: bold;
-    text-decoration: none;
-    color: $texto;
-    border: none;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    transition: .2s;
-    cursor: pointer;
-    text-align: center;
-}
+
 .image{
     padding-left: 10%;
     padding-bottom: 0.5em;
@@ -132,11 +118,7 @@ background-color:$badground;
     width: 100%;
     padding: 6px 10px;
   }
-  .selector{
-    background-color: $light-blue;
-    
-    color: $texto;
-  }
+  
 
   .event{
     color:$texto;
