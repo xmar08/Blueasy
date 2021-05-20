@@ -1,0 +1,228 @@
+$blue-bg:#000522;
+$light-blue:#003366;
+$badground:#002A4A;
+$texto:#fff;
+
+body{
+    
+    padding-left: 0%;
+    padding-right: 0%;
+    height: max-content;
+   
+}
+.row{
+    --bs-gutter-x: 0rem; 
+}
+.nav1{
+    background-color: $blue-bg;  
+    padding: 1em 10%;
+    width: 100vw; 
+    background-position-y: center;
+    background-position-x: center;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+}
+.navbar-nav2{
+    margin-left: 21em;
+    
+}
+
+
+.titubarra{
+   color:$texto;
+   margin-left: 0em;
+   font-family: Roboto;
+   display: inline-block;
+   list-style: none
+}
+.carro{
+    width:30px;
+    
+}
+
+.mb-3{
+  margin-bottom: 1rem !important;
+}
+
+ 
+ .nav2{
+    background-color: $light-blue;  
+    padding: 1em 10%;
+    width: 100vw; 
+    background-position-y: center;
+    background-position-x: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+}
+//***********fin nav
+//***************************
+.conta{
+background-color:$badground;
+
+}
+
+.image{
+    padding-left: 10%;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.subtitu{
+  color: $texto;
+  
+}
+.vl {
+    border-left: 6px solid $blue-bg;
+    height: 100px;
+  }
+  .logo{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+  }
+  //************************titulo evento
+  .ti-event{
+      color:$texto;
+      background-color: $blue-bg;
+      text-align: center;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top:0.5em;
+      padding-bottom:0.5em;
+  }
+  //***********************form evento
+  .buscar{
+    display: contents;
+  }
+  .imagebusca{
+    width:25px; 
+    align-self: auto;
+    margin-right: 2em;
+  }
+.form-control{
+    border-radius:1.25rem ;
+}
+
+.form {
+  background-color: $blue-bg;
+    width: 300px;
+    height: 44px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid $texto;
+  }
+  input  {
+    all: unset;
+    font: 16px system-ui;
+    color: $texto;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  
+
+  .event{
+    color:$texto;
+    background-color: $blue-bg;
+    text-align: center;
+    width: 130px;
+    border: 1px solid $blue-bg;
+    margin-left: -36em;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 1em;
+}
+.ti-event2{
+  color:$texto;
+  background-color: $light-blue;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+}
+//************************DEtalle
+.image2{
+  padding-left: 10%;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  width: 40%;
+}
+.subtitu2{
+  color: $blue-bg;
+  
+}
+.vl2 {
+    border-left: 6px solid $blue-bg;
+    height: 64px;
+  }
+  .logo2{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    width: 45%;
+  }
+  
+  hr {
+    margin: 2rem 0;
+    color: inherit;
+    background-color: $blue-bg;
+    border: 0;
+    opacity: .25;
+    size: 6;
+    width: 81em;
+    height: 1em;
+    margin-top: -5em;
+    margin-left: 1%;
+
+}
+
+//*********TAbla*****
+
+//******************************Footer
+
+.footer-back{
+  background-color: $blue-bg;
+  color:$texto;
+}
+.footer-copy{
+  background-color: $light-blue;
+  color:$texto;
+  text-align: center;
+text-decoration: none;
+}
+.footer-margen{
+   padding-left:36%;
+   
+}
+.footer-link{
+  color:$texto;
+}
+.footer-icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.face{
+  width: 40%;
+}
+
+.tele{
+  width: 37%;
+}
+.list{
+  margin-top: 5%;
+
+}
