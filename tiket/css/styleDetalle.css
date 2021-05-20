@@ -1,4 +1,5 @@
 body {
+  font-family: Roboto;
   padding-left: 0%;
   padding-right: 0%;
   height: -webkit-max-content;
@@ -21,13 +22,14 @@ body {
 }
 
 .navbar-nav2 {
-  margin-left: 21em;
+  margin-left: 7em;
 }
 
 .titubarra {
   color: #fff;
   margin-left: 0em;
-  font-family: Roboto;
+  font-size: 21pt;
+  font-weight: 300;
   display: inline-block;
   list-style: none;
 }
@@ -56,7 +58,6 @@ body {
 }
 
 .image {
-  padding-left: 10%;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
 }
@@ -72,15 +73,27 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 3em;
 }
 
 .subtitu {
   color: #fff;
+  font-size: 24pt;
+  font-weight: 300;
+}
+
+.subtitu8 {
+  color: #fff;
+  font-size: 35pt;
+  font-weight: 700;
 }
 
 .vl {
   border-left: 6px solid #000522;
   height: 100px;
+  margin-left: 2em;
 }
 
 .logo {
@@ -97,6 +110,8 @@ body {
   padding-right: 10%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  font-size: 36pt;
+  font-weight: 500;
 }
 
 .buscar {
@@ -145,13 +160,12 @@ input {
   color: #fff;
   background-color: #000522;
   text-align: center;
-  width: 130px;
+  width: 182px;
   border: 1px solid #000522;
   margin-left: -36em;
-  font-family: Roboto;
-  font-size: 1rem;
-  font-weight: 400;
   margin-right: 1em;
+  font-size: 21pt;
+  font-weight: 300;
 }
 
 .ti-event2 {
@@ -164,29 +178,6 @@ input {
   padding-bottom: 0.5em;
 }
 
-.image2 {
-  padding-left: 10%;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
-  width: 40%;
-}
-
-.subtitu2 {
-  color: #000522;
-}
-
-.vl2 {
-  border-left: 6px solid #000522;
-  height: 64px;
-}
-
-.logo2 {
-  padding-left: 10%;
-  padding-right: 10%;
-  display: block;
-  width: 45%;
-}
-
 hr {
   margin: 2rem 0;
   color: inherit;
@@ -196,8 +187,77 @@ hr {
   size: 6;
   width: 81em;
   height: 1em;
-  margin-top: -5em;
+  margin-top: -1em;
   margin-left: 1%;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: auto;
+}
+
+.image2 {
+  width: 70%;
+  margin-left: 2em;
+}
+
+.subtitu2 {
+  color: #000522;
+  font-size: 36pt;
+  font-weight: 900;
+  margin-right: 1em;
+  padding-left: 10%;
+}
+
+.subtitu3 {
+  color: #000522;
+  font-size: 10pt;
+  font-weight: 300;
+  margin-right: 1em;
+}
+
+.subtitu4 {
+  color: #000522;
+  font-size: 16pt;
+  font-weight: 900;
+  margin-right: 1em;
+  padding-right: 3.2em;
+}
+
+.subtitu5 {
+  color: #000522;
+  font-size: 24pt;
+  font-weight: 500;
+  margin-right: 1em;
+}
+
+.subtitu6 {
+  color: #000522;
+  font-size: 14pt;
+  font-weight: 300;
+  margin-right: 1em;
+}
+
+.subtitu7 {
+  color: #000522;
+  font-size: 18pt;
+  font-weight: 300;
+  margin-right: 1em;
+}
+
+.vl2 {
+  border-left: 6px solid #000522;
+  height: 64px;
+}
+
+.logo2 {
+  display: block;
+  width: 61%;
+  margin-left: 2em;
 }
 
 .footer-back {
