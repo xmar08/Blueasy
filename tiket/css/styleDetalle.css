@@ -14,7 +14,7 @@ body {
 .nav1 {
   background-color: #000522;
   padding: 1em 10%;
-  width: 100vw;
+  width: 100%;
   background-position-y: center;
   background-position-x: center;
   padding-left: 10%;
@@ -23,6 +23,7 @@ body {
 
 .navbar-nav2 {
   margin-left: 7em;
+  width: 100%;
 }
 
 .titubarra {
@@ -45,7 +46,7 @@ body {
 .nav2 {
   background-color: #003366;
   padding: 1em 10%;
-  width: 100vw;
+  width: 100%;
   background-position-y: center;
   background-position-x: center;
   padding-left: 10%;
@@ -58,24 +59,23 @@ body {
 }
 
 .image {
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
-}
-
-.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  width: 1269px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 100vh;
-  padding-left: 5em;
-  padding-right: 5em;
-  padding-bottom: 3em;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding-left: 10%;
+}
+
+.container {
+  background-color: #fff;
 }
 
 .subtitu {
@@ -160,10 +160,8 @@ input {
   color: #fff;
   background-color: #000522;
   text-align: center;
-  width: 182px;
+  width: 100%;
   border: 1px solid #000522;
-  margin-left: -36em;
-  margin-right: 1em;
   font-size: 21pt;
   font-weight: 300;
 }
@@ -201,16 +199,23 @@ hr {
 }
 
 .image2 {
-  width: 70%;
-  margin-left: 2em;
+  width: 296px;
+  margin-left: 4em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+.image3 {
+  width: 320px;
+  margin-left: 5em;
 }
 
 .subtitu2 {
   color: #000522;
-  font-size: 36pt;
+  font-size: 28pt;
   font-weight: 900;
-  margin-right: 1em;
-  padding-left: 10%;
+  padding-left: 5%;
+  width: 100%;
 }
 
 .subtitu3 {
@@ -223,9 +228,18 @@ hr {
 .subtitu4 {
   color: #000522;
   font-size: 16pt;
-  font-weight: 900;
+  font-weight: 700;
   margin-right: 1em;
-  padding-right: 3.2em;
+  text-align: center;
+  width: 50%;
+}
+
+.titutabla {
+  color: #000522;
+  font-size: 18pt;
+  font-weight: 700;
+  padding-left: 10%;
+  width: 45%;
 }
 
 .subtitu5 {
@@ -233,6 +247,7 @@ hr {
   font-size: 24pt;
   font-weight: 500;
   margin-right: 1em;
+  width: 100%;
 }
 
 .subtitu6 {
@@ -247,6 +262,7 @@ hr {
   font-size: 18pt;
   font-weight: 300;
   margin-right: 1em;
+  width: 55%;
 }
 
 .vl2 {
@@ -258,6 +274,27 @@ hr {
   display: block;
   width: 61%;
   margin-left: 2em;
+}
+
+.contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  margin-left: 2em;
+  width: 44%;
+}
+
+.btn {
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 18pt;
+  font-weight: 300;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .footer-back {
@@ -304,4 +341,19 @@ hr {
 
 .list {
   margin-top: 5%;
+}
+
+.otrosevent {
+  color: #000522;
+  font-size: 24pt;
+  font-weight: 900;
+  padding-left: 2.5em;
+  width: 100%;
+}
+
+.otraimage {
+  width: 296px;
+  margin-left: 4em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }

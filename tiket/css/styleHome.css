@@ -1,4 +1,5 @@
 body {
+  font-family: Roboto;
   padding-left: 0%;
   padding-right: 0%;
   height: -webkit-max-content;
@@ -10,10 +11,17 @@ body {
   --bs-gutter-x: 0rem;
 }
 
+.navbarm {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+
 .nav1 {
   background-color: #000522;
   padding: 1em 10%;
-  width: 100vw;
+  width: 100%;
   background-position-y: center;
   background-position-x: center;
   padding-left: 10%;
@@ -21,13 +29,15 @@ body {
 }
 
 .navbar-nav2 {
-  margin-left: 21em;
+  margin-left: 7em;
+  width: 100%;
 }
 
 .titubarra {
   color: #fff;
   margin-left: 0em;
-  font-family: Roboto;
+  font-size: 21pt;
+  font-weight: 300;
   display: inline-block;
   list-style: none;
 }
@@ -43,12 +53,14 @@ body {
 .nav2 {
   background-color: #003366;
   padding: 1em 10%;
-  width: 100vw;
+  width: 100%;
   background-position-y: center;
   background-position-x: center;
   padding-left: 10%;
   padding-right: 10%;
   display: block;
+  margin-bottom: 0px;
+  height: 50%;
 }
 
 .conta {
@@ -56,31 +68,41 @@ body {
 }
 
 .image {
-  padding-left: 10%;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
-}
-
-.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  width: 1269px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 100vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding-left: 10%;
+}
+
+.container {
+  background-color: #fff;
 }
 
 .subtitu {
   color: #fff;
+  font-size: 24pt;
+  font-weight: 300;
+}
+
+.subtitu8 {
+  color: #fff;
+  font-size: 35pt;
+  font-weight: 700;
 }
 
 .vl {
   border-left: 6px solid #000522;
   height: 100px;
+  margin-left: 2em;
 }
 
 .logo {
@@ -97,6 +119,8 @@ body {
   padding-right: 10%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  font-size: 36pt;
+  font-weight: 500;
 }
 
 .buscar {
@@ -137,7 +161,6 @@ input {
   all: unset;
   font: 16px system-ui;
   color: #fff;
-  height: 100%;
   width: 100%;
   padding: 6px 10px;
 }
@@ -146,13 +169,10 @@ input {
   color: #fff;
   background-color: #000522;
   text-align: center;
-  width: 130px;
+  width: 100%;
   border: 1px solid #000522;
-  margin-left: -36em;
-  font-family: Roboto;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-right: 1em;
+  font-size: 21pt;
+  font-weight: 300;
 }
 
 .ti-event2 {
@@ -165,25 +185,125 @@ input {
   padding-bottom: 0.5em;
 }
 
-.nombre-evento {
-  text-align: center;
-  color: black;
-  font-family: Roboto;
+hr {
+  margin: 2rem 0;
+  color: inherit;
+  background-color: #000522;
+  border: 0;
+  opacity: 0.25;
+  size: 6;
+  width: 81em;
+  height: 1em;
+  margin-top: -1em;
+  margin-left: 1%;
 }
 
-.lugar-evento {
-  text-align: center;
-  color: black;
-  font-family: Roboto;
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: auto;
 }
 
-.botton-evento {
-  -ms-flex-line-pack: center;
-      align-content: center;
+.image2 {
+  width: 296px;
+  margin-left: 4em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+.image3 {
+  width: 320px;
+  margin-left: 5em;
+}
+
+.subtitu2 {
+  color: #000522;
+  font-size: 28pt;
+  font-weight: 900;
+  padding-left: 5%;
+  width: 100%;
+}
+
+.subtitu3 {
+  color: #000522;
+  font-size: 10pt;
+  font-weight: 300;
+  margin-right: 1em;
+}
+
+.subtitu4 {
+  color: #000522;
+  font-size: 16pt;
+  font-weight: 700;
+  margin-right: 1em;
+  text-align: center;
+  width: 50%;
+}
+
+.titutabla {
+  color: #000522;
+  font-size: 18pt;
+  font-weight: 700;
+  padding-left: 10%;
+  width: 45%;
+}
+
+.subtitu5 {
+  color: #000522;
+  font-size: 24pt;
+  font-weight: 500;
+  margin-right: 1em;
+  width: 100%;
+}
+
+.subtitu6 {
+  color: #000522;
+  font-size: 14pt;
+  font-weight: 300;
+  margin-right: 1em;
+}
+
+.subtitu7 {
+  color: #000522;
+  font-size: 18pt;
+  font-weight: 300;
+  margin-right: 1em;
+  width: 55%;
+}
+
+.vl2 {
+  border-left: 6px solid #000522;
+  height: 64px;
+}
+
+.logo2 {
   display: block;
-  text-align: center;
-  background-color: #003366;
-  font-family: Roboto;
+  width: 61%;
+  margin-left: 2em;
+}
+
+.contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  margin-left: 2em;
+  width: 44%;
+}
+
+.btn {
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 18pt;
+  font-weight: 300;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .footer-back {
@@ -230,4 +350,24 @@ input {
 
 .list {
   margin-top: 5%;
+}
+
+.otrosevent {
+  color: #000522;
+  font-size: 24pt;
+  font-weight: 900;
+  padding-left: 2.5em;
+  width: 100%;
+}
+
+.otraimage {
+  width: 296px;
+  margin-left: 4em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.bar {
+  margin-bottom: 0px !important;
+  display: inline-block;
 }
