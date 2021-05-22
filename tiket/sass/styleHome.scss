@@ -6,14 +6,45 @@ $font: Roboto;
 $ligh:#85c7d7;
 body{
     font-family:$font;
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
     height: max-content;
    
 }
 .row{
     --bs-gutter-x: 0rem; 
 }
+.logo{
+  margin-top: -2em;
+  margin-left: 0%;
+  image-orientation: from-image;
+  align-items: center;
+  
+
+}
+.titubarra{
+  color:$texto;
+  margin-left: 1em;
+  text-decoration: NONE;
+  font-size: 21pt;
+ font-weight: 300;
+ border: none;
+  display: inline-block;
+  list-style: none
+}
+
+
+
+
+.container-fluid{
+  padding-right: 0px;
+padding-left: 0px;
+}
+
+
+
+
+
 .navbarm {
   position: relative;
   min-height: 50px;
@@ -22,8 +53,10 @@ body{
 }
 .nav1{
     background-color: $blue-bg;  
-    padding: 1em 10%;
+  
+    padding-top: 2em;
     width: 100%; 
+    height: 9em;
     background-position-y: center;
     background-position-x: center;
     padding-left: 10%;
@@ -33,19 +66,15 @@ body{
 .navbar-nav2{
     margin-left:7em;
     width: 100%;
+    height: 22%;
+  
+}
+
+.navbar {
+    border-radius: 0px;
 }
 
 
-.titubarra{
-   color:$texto;
-   margin-left: 0em;
-   
-   font-size: 21pt;
-  font-weight: 300;
-
-   display: inline-block;
-   list-style: none
-}
 .carro{
     width:30px;
     
@@ -67,12 +96,19 @@ body{
     display: block;
     margin-bottom:0px ;
     height: 50%;
+    margin-top: -21px;
+}
+.navbarb {
+  position: relative;
+  min-height: 10vw;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
 }
 //***********fin nav
 //***************************
 .conta{
 background-color:$badground;
-
+width: 100%;
 }
 
 .image{
@@ -87,7 +123,9 @@ background-color:$badground;
 .container{
   background-color: $texto;
 }
-
+.container{
+  background-color: $texto;
+}
 .subtitu{
   color: $texto;
   font-size: 24pt;
@@ -115,15 +153,16 @@ background-color:$badground;
       color:$texto;
       background-color: $blue-bg;
       text-align: center;
-      padding-left: 10%;
-      padding-right: 10%;
       padding-top:0.5em;
       padding-bottom:0.5em;
       font-size: 36pt;
       font-weight: 500;
-      margin-right:0px;
-margin-left: 0px;
+       margin-left: 14px;
+       width: 100%;
   }
+
+  
+
   //***********************form evento
   .buscar{
     display: contents;
@@ -146,6 +185,7 @@ margin-left: 0px;
     flex-direction: row;
     align-items: center;
     border: 1px solid $texto;
+    margin-left: 3em;
   }
   input  {
     all: unset;
@@ -290,7 +330,10 @@ padding-right: 1.5em;
 
 .footer-back{
   background-color: $blue-bg;
-  color:$texto;
+  margin-left: 0em;
+  margin-right: 1em;
+  width: 100%;
+  margin-top: 2em;
 }
 .footer-copy{
   background-color: $light-blue;
@@ -337,8 +380,35 @@ text-decoration: none;
   margin-right: 1em;
   margin-bottom: 1em;
 }
+.footer-end{
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 97.5%;
+  margin-top: 2em;
+}
 //*************************Carusel
 .bar{
   margin-bottom: 0px !important;
   display: inline-block;
+}
+//*******************TARJETAS
+.nombre-evento{
+  color: $blue-bg;
+  font-size: 14pt;
+  font-weight: 400;
+  text-align: center;
+}
+.lugar-evento{
+  color: $blue-bg;
+  font-size: 12pt;
+  font-weight: 400;
+  text-align: center;
+}
+.botton-evento{
+  color: $texto;
+  font-size: 12pt;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  
 }
